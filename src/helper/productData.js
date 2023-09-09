@@ -1,8 +1,9 @@
 export const productData = [
         { 
             id:1,
-            title:"Sakiz",
-            price:0.5,   
+            title:"Motor",
+            price:0.5, 
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBXLUnA7YN_fLc0x3WYkuh-5DnYyJdZsVepQ&usqp=CAU"  
          },
          { 
                 id:2,
