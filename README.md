@@ -5,7 +5,7 @@
 
 ## Description
 
-Project aims to create a Milestone Blog App.
+Project aims to create a  Para Harcama App.
 
 ## Problem Statement
 
@@ -60,7 +60,7 @@ I created a Para Harcama App using ReactJS.
 
 ## Demo
 
-[Para Harcama App]()
+[Para Harcama App](https://para-harcama-app-eight.vercel.app/)
 
 ## Expected Outcome
 
