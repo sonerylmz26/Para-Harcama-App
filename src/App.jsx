@@ -5,6 +5,7 @@ import Header from "./componets/Header";
 import { productData } from "./helper/productData";
 import Product from "./componets/Product";
 import Basket from "./componets/Basket";
+import { Grid } from "@mui/material";
 function App() {
   const [money , setMoney ] = useState(1000000)
 const [basket , setBasket ] = useState([])
@@ -28,9 +29,12 @@ return acc + (item.amount * (productData.find(product => product.id === item.id)
      <Header total={total} money={money} />
      {
       productData.map((product)=> (
-        <Product key={product.id} basket={basket} setBasket={setBasket} product ={product} total={total}  money={money}/>
+        
+        <Product key={product.id}  basket={basket} setBasket={setBasket} product ={product} total={total}  money={money}/>
+    
        ))
      }
+     
     {
       total > 0 && (
         <Basket resetBasket={resetBasket} productData={productData}  basket={basket} total={total} />

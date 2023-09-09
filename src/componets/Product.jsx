@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button } from '@mui/material';
+import {  Grid } from '@mui/material';
 import ProductCard from './ProductCard';
 const Product = ({product, basket, setBasket,total,money}) => {
   const basketItem = basket.find(item => item.id === product.id)
@@ -38,8 +38,10 @@ const basketWithoutCurrent = basket.filter(item => item.id !== product.id)
         return (
     <>
 
+<Grid  container spacing={2}>
+ 
 <ProductCard product={product} basketItem={basketItem} addBasket={addBasket} removeBasket={removeBasket}   />
-
+</Grid>
 
  
   
