@@ -14,7 +14,8 @@ const resetBasket = () => {
   setBasket([])
 }
 useEffect(() => {
-  
+ 
+
 setTotal(
   basket.reduce((acc,item) => {
 return acc + (item.amount * (productData.find(product => product.id === item.id).price))
@@ -27,6 +28,7 @@ return acc + (item.amount * (productData.find(product => product.id === item.id)
   return (
     <div className="App">
      <Header total={total} money={money} />
+     <Grid sx={{backgroundColor:"#dede", padding:"20px",}}  container spacing={1}>
      {
       productData.map((product)=> (
         
@@ -34,7 +36,7 @@ return acc + (item.amount * (productData.find(product => product.id === item.id)
     
        ))
      }
-     
+     </Grid>
     {
       total > 0 && (
         <Basket resetBasket={resetBasket} productData={productData}  basket={basket} total={total} />

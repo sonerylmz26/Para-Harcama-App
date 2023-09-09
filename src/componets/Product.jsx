@@ -19,6 +19,7 @@ checkBasket.amount += 1
         }] )
 }  
 
+
        }
 
        const removeBasket = () => {
@@ -38,10 +39,10 @@ const basketWithoutCurrent = basket.filter(item => item.id !== product.id)
         return (
     <>
 
-<Grid  container spacing={2}>
+
  
 <ProductCard product={product} basketItem={basketItem} addBasket={addBasket} removeBasket={removeBasket}   />
-</Grid>
+
 
  
   
