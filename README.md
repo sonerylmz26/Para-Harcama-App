@@ -5,7 +5,7 @@
 
 ## Description
 
-Project aims to create a Milestone Blog App.
+Project aims to create a  Para Harcama App.
 
 ## Problem Statement
 
