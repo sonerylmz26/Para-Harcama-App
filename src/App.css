@@ -1,0 +1,13 @@
+.amount{
+ 
+     padding: 0px 15px;
+     margin-left:10px; 
+     font-size: 24px; 
+     font-weight: 500;
+}
+
+.buttons{
+display: flex;
+        justify-content: center;
+        
+}

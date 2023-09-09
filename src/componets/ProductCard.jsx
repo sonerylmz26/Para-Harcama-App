@@ -29,7 +29,7 @@ export default function ProductCard({product, basket, setBasket, total, money, b
         $  {moneyFormat(product.price)}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions className="buttons" >
       <Button variant="contained"  disabled={!basketItem} onClick={removeBasket}>Sat</Button>
         <span className='amount'>{basketItem && basketItem.amount || 0}</span>
         <Button sx={{backgroundColor:"green",}} variant="contained" disabled={total +  product.price > money} onClick={addBasket}>Satın Al</Button>
